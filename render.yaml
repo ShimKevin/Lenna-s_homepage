@@ -1,0 +1,18 @@
+static_sites:
+  - name: lennas-portfolio
+    build_command: ./build.sh
+    static_path: .
+    routes:
+      - type: rewrite
+        source: "/*"
+        destination: "/index.html"
+    headers:
+      - path: "/sitemap.xml"
+        name: "Content-Type"
+        value: "application/xml"
+      - path: "/robots.txt"
+        name: "Content-Type"
+        value: "text/plain"
+      - path: "/*"
+        name: "Cache-Control"
+        value: "public, max-age=3600"
