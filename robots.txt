@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Disallow: /static/assets/
+Allow: /static/assets/*.jpg$
+Allow: /static/assets/*.png$
+Allow: /static/assets/*.webp$
+Allow: /static/assets/*.docx$
+Crawl-delay: 3
+Host: lennasportfolio.vercel.app
+Sitemap: https://lennasportfolio.vercel.app/sitemap.xml
+
+# Social media bots
+User-agent: Twitterbot
+Crawl-delay: 1
+
+User-agent: LinkedInBot
+Crawl-delay: 1
+
+User-agent: InstagramBot
+Crawl-delay: 2

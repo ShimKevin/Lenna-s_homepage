@@ -3,141 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenna Adongo Oduor | Portfolio</title>
+    <title>Lenna Adongo Oduor | Special Needs Educator</title>
+    <meta name="description" content="Lenna Adongo Oduor - Special Needs Educator with expertise in international curricula including Pearson Edexcel, Cambridge, and IB. View portfolio and services.">
+    <meta name="keywords" content="special needs educator, inclusive education, IEP development, autism specialist, Kenya educator">
+    <link rel="canonical" href="https://lennasportfolio.vercel.app">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Floating Background Shapes -->
+    <div class="floating-shapes">
+        <div class="shape circle" style="width: 100px; height: 100px; top: 10%; left: 5%;"></div>
+        <div class="shape square" style="width: 80px; height: 80px; top: 20%; right: 10%;"></div>
+        <div class="shape triangle" style="top: 40%; left: 15%;"></div>
+        <div class="shape circle" style="width: 60px; height: 60px; bottom: 20%; right: 15%;"></div>
+        <div class="shape square" style="width: 70px; height: 70px; bottom: 30%; left: 20%;"></div>
+    </div>
+
+    <!-- Header with Hamburger Menu -->
     <header>
-        <h1>Lenna Adongo Oduor</h1>
-        <nav>
-            <a href="#about">About Me</a>
+        <div class="logo">Lenna Adongo Oduor</div>
+        <nav class="desktop-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#curriculum">Curriculum</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#projects">Projects</a>
+            <button class="dark-toggle" id="darkToggleBtn"><i class="fas fa-moon"></i></button>
         </nav>
-        <button class="dark-toggle" onclick="toggleDarkMode()" id="darkToggleBtn"><i class="fas fa-moon"></i></button>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
     </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="close-btn" id="closeNav">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#projects">Projects</a>
+        <button class="dark-toggle" id="darkToggleBtnMobile"><i class="fas fa-moon"></i> Dark Mode</button>
+    </nav>
 
-    <section id="hero" class="hero">
-        <img src="static/assets/63ce36fb73234e8e59b98c56a0f14637.jpg" alt="Lenna Adongo Oduor Profile Picture">
-        <h2>Hello, I'm Lenna</h2>
-        <p>Welcome to my portfolio! I am a passionate educator with a focus on special needs education.</p>
-        <p>My mission is to empower learners with special needs to reach their full potential.</p>
-        <p>Feel free to explore my work and get in touch!</p>
-        <a class="contact-btn" href="lennaoduor@gmail.com"><i class="fas fa-envelope"></i> Contact Me</a>
-        <a class="resume-btn" href="static/assets/Lenna Adongo Oduor.docx" download><i class="fas fa-download"></i> Download Resume</a>
-        <a class="whatsapp-btn" href="https://wa.me/254701073584" target="_blank"><i class="fab fa-whatsapp"></i> Message on WhatsApp</a>
-    </section>
+    <!-- Page Content Container -->
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page">
+            <!-- Hero Section -->
+            <section class="hero">
+                <img src="static/assets/63ce36fb73234e8e59b98c56a0f14637.jpg" alt="Lenna Adongo Oduor" loading="lazy">
+                <h2>Hello, I'm Lenna</h2>
+                <p>Welcome to my portfolio! I am a passionate educator with a focus on special needs education.</p>
+                <p>My mission is to empower learners with special needs to reach their full potential.</p>
+                <div class="btn-container">
+                    <a class="btn animated" href="mailto:lennaoduor@gmail.com"><i class="fas fa-envelope"></i> Contact Me</a>
+                    <a class="btn btn-secondary animated" href="static/assets/Lenna Adongo Oduor.docx" download><i class="fas fa-download"></i> Download Resume</a>
+                    <a class="btn animated" href="https://wa.me/254701073584" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </section>
 
-    <section class="section reveal" id="about">
-        <h2>About Me</h2>
-        <p style="line-height:2;"></p>I am a teacher by profession,a graduate from kenyatta university with a bachelors degree in special needs,I specialized in intellectual disabilty with English and Literature as my teaching subjects.
-        I have with experience undergone training on the different international curriculums,this includes Pearson Edexcel and Cambridge curriculum
-        I also have undergone and exprerienced teaching english as a second langual to individuals who are not native speakers of English language
-        I have quality experience in working with learners having needs like autism,intellectual disabilities and learning disabilities.
-        My goal is to help learners with special needs achieve their full potential and become independent individuals.
-        Helping learners discover and develop their potentialities gives me an opportunity to grow in all aspects </p>
-    </section>
+            <!-- About Section Preview -->
+            <section class="section" id="about-preview">
+                <h2>About Me</h2>
+                <p>I am a teacher by profession, a graduate from Kenyatta University with a Bachelor's degree in Special Needs. I specialized in intellectual disability with English and Literature as my teaching subjects.</p>
+                <p>With experience, I have undergone training on different international curricula, including Pearson Edexcel and Cambridge curriculum...</p>
+                <div class="page-navigation">
+                    <a href="#about" class="btn animated">Read More About Me</a>
+                </div>
+            </section>
 
-    <section class="section reveal" id="services">
-        <h2>My Services</h2>                                                                          
-        </ul>
-        <li>Education</li> 
-        <li>Individualized Education Program (IEP)</li>
-        <li> Differentiated Instruction</li>
-        <li>Universal Design for Learning (UDL)</li>
-        <li>Functional Skills Curriculum</li>
-        <li>Life Skills Curriculum</li>
-        <li>Social Skills Curriculum</li>
-        <li>Transition Planning Curriculum</li>
-        <li> Assistive Technology Integration</li>
-        <li>Behavior Intervention Plans (BIPs)</li>
-        <li>Positive Behavior Support (PBS)</li>
-        <li>Multi-Tiered System of Supports (MTSS)</li>
-        <li>Collaborative Teaching Models</li>
-        <li>Co-Teaching Strategies</li>
-        <li>Classroom Management Strategies</li>
-        <li>Classroom Accommodations and Modifications</li>
-        <li>Special Education Assessment and Evaluation</li>
-        <li>Special Education Data Analysis and Interpretation</li>
-        <li>Special Education Policy and Advocacy</li>
-       </ul>
-    </section>
+            <!-- Services Section Preview -->
+            <section class="section" id="services-preview">
+                <h2>My Services</h2>
+                <ul>
+                    <li>Education</li>
+                    <li>Individualized Education Program (IEP)</li>
+                    <li>Differentiated Instruction</li>
+                    <li>Universal Design for Learning (UDL)</li>
+                    <li>Functional Skills Curriculum</li>
+                </ul>
+                <div class="page-navigation">
+                    <a href="#services" class="btn animated">View All Services</a>
+                </div>
+            </section>
 
-    <section class="section reveal" id="curriculum">
-        <h2>Curriculum</h2>
-        <p>Pearson Edexcel<br>
-        Cambridge Curriculum<br>
-        International Baccalaureate<br>
-        American Curriculum<br>
-        British Curriculum<br>
-        Montessori Method<br>
-        Special Needs Education Curriculum<br>
-        English as a Second Language (ESL) Curriculum<br> 
-        </p>
-    </section>
+            <!-- Curriculum Section Preview -->
+            <section class="section" id="curriculum-preview">
+                <h2>Curriculum</h2>
+                <ul>
+                    <li>Pearson Edexcel</li>
+                    <li>Cambridge Curriculum</li>
+                    <li>International Baccalaureate</li>
+                    <li>American Curriculum</li>
+                </ul>
+                <div class="page-navigation">
+                    <a href="#curriculum" class="btn animated">Explore Curriculum</a>
+                </div>
+            </section>
 
-    <section class="section reveal" id="hobbies">
-        <h2>My Hobbies</h2>
-        <ol>
-            <li>Reading</li>
-            <li>Exploring nature</li>
-            <li>Cooking</li>
-            <li>Listening to music</li>
-        </ol>
-    </section>
+            <!-- Hobbies Section Preview -->
+            <section class="section" id="hobbies-preview">
+                <h2>My Hobbies</h2>
+                <ol>
+                    <li>Reading</li>
+                    <li>Exploring nature</li>
+                    <li>Cooking</li>
+                </ol>
+                <div class="page-navigation">
+                    <a href="#hobbies" class="btn animated">More About My Hobbies</a>
+                </div>
+            </section>
 
-    <section class="section reveal" id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-            <div style="background-color: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <h3 style="margin-bottom: 0.5rem; color: #1d2b64;"> Collaborative Teaching Models</h3>
-                <p>A design in which different teaching criterias are applied in order to achieve the best results or reduce monotony in learning,this includes incooperating circle time,group work,peer teaching,table top activities,map activities and so more in lessons.</p>
-                <a href="#" target="_blank" style="display: inline-block; margin-top: 0.5rem; color: #f06292; font-weight: bold;">View Project</a>
-            </div>
-            <p>
-            1. Inclusive Classroom Strategies<br>
-            2. Assistive Technology Integration<br>
-            3. Behavior Intervention Plans (BIPs)<br>
-            4. Individualized Education Program (IEP) Development<br>
-            5. Transition Planning for Students with Special Needs<br>
-            6. Functional Skills Curriculum Development<br>
-            7. Multi-Tiered System of Supports (MTSS) Implementation<br>
-            </p>
+            <!-- Projects Section Preview -->
+            <section class="section" id="projects-preview">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3><i class="fas fa-users"></i> Collaborative Teaching Models</h3>
+                        <p>A design in which different teaching criteria are applied to achieve the best results...</p>
+                        <a href="#projects">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="page-navigation">
+                    <a href="#projects" class="btn animated">View All Projects</a>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="section">
+                <h2>What People Say</h2>
+                <div class="testimonial">
+                    "Lenna is a very passionate teacher and a good colleague. Her dedication to special needs education is truly inspiring..."
+                    <em>– Mercy Lydia Mulei</em>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <section class="section reveal">
-        <h2>What People Say</h2>
-        <blockquote>
-            "A very passionate teacher and a good colleague"<br>
-            <em>– Mercy Lydia Mulei</em>
-        </blockquote>
-    </section>
+        <!-- About Page -->
+        <div id="about" class="page" style="display:none;">
+            <a href="#home" class="back-home" id="backHomeAbout"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <section class="section">
+                <h2>About Me</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3><i class="fas fa-user-graduate"></i> My Background</h3>
+                        <p>I am a teacher by profession, a graduate from Kenyatta University with a Bachelor's degree in Special Needs. I specialized in intellectual disability with English and Literature as my teaching subjects.</p>
+                        <p>With experience, I have undergone training on different international curricula, including Pearson Edexcel and Cambridge curriculum. I also have experience teaching English as a second language to individuals who are not native speakers of English.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> My Experience</h3>
+                        <p>I have quality experience in working with learners having needs like autism, intellectual disabilities and learning disabilities. My goal is to help learners with special needs achieve their full potential and become independent individuals.</p>
+                        <p>Helping learners discover and develop their potentialities gives me an opportunity to grow in all aspects.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-bullseye"></i> My Mission</h3>
+                        <p>My mission is to create inclusive learning environments where every student feels valued and supported. I believe that with the right approach and dedication, every learner can achieve their full potential.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
 
+        <!-- Services Page -->
+        <div id="services" class="page" style="display:none;">
+            <a href="#home" class="back-home" id="backHomeServices"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <section class="section">
+                <h2>My Services</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3><i class="fas fa-book-open"></i> Education Services</h3>
+                        <ul>
+                            <li>Individualized Education Program (IEP)</li>
+                            <li>Differentiated Instruction</li>
+                            <li>Universal Design for Learning (UDL)</li>
+                            <li>Functional Skills Curriculum</li>
+                            <li>Life Skills Curriculum</li>
+                            <li>Social Skills Curriculum</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-tasks"></i> Curriculum Development</h3>
+                        <ul>
+                            <li>Transition Planning Curriculum</li>
+                            <li>Assistive Technology Integration</li>
+                            <li>Behavior Intervention Plans (BIPs)</li>
+                            <li>Positive Behavior Support (PBS)</li>
+                            <li>Multi-Tiered System of Supports (MTSS)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-hands-helping"></i> Specialized Support</h3>
+                        <ul>
+                            <li>Collaborative Teaching Models</li>
+                            <li>Co-Teaching Strategies</li>
+                            <li>Classroom Management Strategies</li>
+                            <li>Classroom Accommodations and Modifications</li>
+                            <li>Special Education Assessment and Evaluation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-chart-line"></i> Professional Services</h3>
+                        <ul>
+                            <li>Special Education Data Analysis and Interpretation</li>
+                            <li>Special Education Policy and Advocacy</li>
+                            <li>Teacher Training and Development</li>
+                            <li>Parent Consultation and Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Curriculum Page -->
+        <div id="curriculum" class="page" style="display:none;">
+            <a href="#home" class="back-home" id="backHomeCurriculum"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <section class="section">
+                <h2>Curriculum Expertise</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3><i class="fas fa-globe-americas"></i> International Curricula</h3>
+                        <ul>
+                            <li>Pearson Edexcel</li>
+                            <li>Cambridge Curriculum</li>
+                            <li>International Baccalaureate</li>
+                            <li>American Curriculum</li>
+                            <li>British Curriculum</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Specialized Approaches</h3>
+                        <ul>
+                            <li>Montessori Method</li>
+                            <li>Special Needs Education Curriculum</li>
+                            <li>English as a Second Language (ESL) Curriculum</li>
+                            <li>Inclusive Education Frameworks</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-pencil-ruler"></i> Curriculum Development</h3>
+                        <p>I develop customized curricula tailored to individual student needs, focusing on:</p>
+                        <ul>
+                            <li>Functional life skills</li>
+                            <li>Social and emotional development</li>
+                            <li>Academic foundations</li>
+                            <li>Transition planning</li>
+                            <li>Vocational skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Hobbies Page -->
+        <div id="hobbies" class="page" style="display:none;">
+            <a href="#home" class="back-home" id="backHomeHobbies"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <section class="section">
+                <h2>My Hobbies & Interests</h2>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3><i class="fas fa-book"></i> Reading</h3>
+                        <p>I'm an avid reader with a particular interest in educational psychology, inclusive teaching methodologies, and literature that explores diverse perspectives. Reading helps me stay current with educational research and find inspiration for my teaching practice.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-tree"></i> Exploring Nature</h3>
+                        <p>Spending time in nature is my way of recharging. I enjoy hiking, bird watching, and botanical gardens. These experiences often inspire activities I incorporate into my teaching to help students connect with the natural world.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-utensils"></i> Cooking</h3>
+                        <p>Cooking is both a creative outlet and a practical life skill that I enjoy sharing with my students. I experiment with recipes from different cultures and adapt cooking activities to make them accessible for learners with various abilities.</p>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3><i class="fas fa-music"></i> Listening to Music</h3>
+                        <p>Music is an important part of my life and my teaching approach. I enjoy diverse genres from classical to world music. I incorporate music therapy techniques in my work with special needs students to enhance learning and emotional expression.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page" style="display:none;">
+            <a href="#home" class="back-home" id="backHomeProjects"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <section class="section">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3><i class="fas fa-users"></i> Collaborative Teaching Models</h3>
+                        <p>A design in which different teaching criteria are applied in order to achieve the best results or reduce monotony in learning, this includes incorporating circle time, group work, peer teaching, table top activities, map activities and more in lessons.</p>
+                        <a href="#">View Project Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3><i class="fas fa-universal-access"></i> Inclusive Classroom Strategies</h3>
+                        <p>Development of comprehensive strategies to create truly inclusive learning environments where all students feel valued and supported regardless of their abilities or backgrounds.</p>
+                        <a href="#">View Project Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3><i class="fas fa-laptop"></i> Assistive Technology Integration</h3>
+                        <p>Implementation of assistive technologies in special education classrooms to enhance learning experiences for students with diverse needs.</p>
+                        <a href="#">View Project Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3><i class="fas fa-brain"></i> Behavior Intervention Plans</h3>
+                        <p>Development and implementation of customized behavior intervention plans for students with challenging behaviors, focusing on positive behavior support strategies.</p>
+                        <a href="#">View Project Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3><i class="fas fa-route"></i> Transition Planning Programs</h3>
+                        <p>Design of comprehensive transition planning programs to help special needs students successfully move from school to adult life, including vocational training and independent living skills.</p>
+                        <a href="#">View Project Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3><i class="fas fa-life-ring"></i> Functional Skills Curriculum</h3>
+                        <p>Development of a functional skills curriculum focused on practical life skills that empower special needs students to achieve greater independence in daily living.</p>
+                        <a href="#">View Project Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-    <div class="contact-info">
-        <a href="tel:+254701073584" class="contact-btn phone-btn">
-            <i class="fas fa-phone"></i> +254 701073584
-        </a>
-        <a href="mailto:lennaoduor@gmail.com" class="contact-btn email-btn">
-            <i class="fas fa-envelope"></i> lennaoduor@gmail.com
-        </a>
-    </div>
-    <div class="social-links">
-        <a href="https://instagram.com/loyal_lenna" target="_blank" class="social-btn instagram-btn">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://linkedin.com/in/lennaoduor" target="_blank" class="social-btn linkedin-btn">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-    </div>
-    <p>&copy; 2025 Lenna Adongo Oduor</p>
-</footer>
- <script src="script.js"></script>
+        <div class="floating-shapes">
+            <div class="shape circle" style="width: 80px; height: 80px; top: 20%; left: 20%;"></div>
+            <div class="shape triangle" style="top: 40%; right: 25%;"></div>
+            <div class="shape square" style="width: 60px; height: 60px; bottom: 30%; left: 30%;"></div>
+        </div>
+        
+        <div class="contact-info">
+            <a href="tel:+254701073584">
+                <i class="fas fa-phone"></i> +254 701073584
+            </a>
+            <a href="mailto:lennaoduor@gmail.com">
+                <i class="fas fa-envelope"></i> lennaoduor@gmail.com
+            </a>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/loyal_lenna" target="_blank" class="instagram-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://linkedin.com/in/lennaoduor" target="_blank" class="linkedin-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+        
+        <p class="copyright">&copy; 2025 Lenna Adongo Oduor. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lenna Adongo Oduor",
+      "url": "https://lennasportfolio.vercel.app",
+      "image": "https://lennasportfolio.vercel.app/static/assets/63ce36fb73234e8e59b98c56a0f14637.jpg",
+      "jobTitle": "Special Needs Educator",
+      "alumniOf": "Kenyatta University",
+      "email": "lennaoduor@gmail.com",
+      "telephone": "+254701073584",
+      "sameAs": [
+        "https://instagram.com/loyal_lenna",
+        "https://linkedin.com/in/lennaoduor"
+      ]
+    }
+    </script>
 </body>
 </html>
