@@ -1,6 +1,6 @@
 # render.yaml
 static_sites:
-  - name: lennas-portfolio
+  - name: lenna-s-homepage  
     build_command: echo "Static site - no build needed"
     static_path: .
     routes:
@@ -9,8 +9,8 @@ static_sites:
         destination: "/index.html"
     headers:
       - path: "/sitemap.xml"
-        name: "Content-Type"
-        value: "application/xml"
+        headers:
+          Content-Type: application/xml
       - path: "/robots.txt"
-        name: "Content-Type"
-        value: "text/plain"
+        headers:
+          Content-Type: text/plain

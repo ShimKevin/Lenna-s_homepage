@@ -3,11 +3,11 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <!-- Main Pages -->
     <url>
-        <loc>https://lenna-s-homepage.onrender.com</loc>
+        <loc>https://lenna-s-homepage.onrender.com/</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://lennasportfolio.vercel.app/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://lenna-s-homepage.onrender.com/"/>
     </url>
     <url>
         <loc>https://lenna-s-homepage.onrender.com/#about</loc>
