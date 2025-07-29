@@ -40,18 +40,6 @@
         <priority>0.8</priority>
     </url>
     
-    <!-- Social Profiles -->
-    <url>
-        <loc>https://instagram.com/loyal_lenna</loc>
-        <lastmod>2025-07-29</lastmod>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://linkedin.com/in/lennaoduor</loc>
-        <lastmod>2025-07-29</lastmod>
-        <priority>0.7</priority>
-    </url>
-    
     <!-- Resources -->
     <url>
         <loc>https://lenna-s-homepage.onrender.com/static/assets/Lenna%20Adongo%20Oduor.docx</loc>
