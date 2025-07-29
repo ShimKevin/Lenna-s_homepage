@@ -3,38 +3,38 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <!-- Main Pages -->
     <url>
-        <loc>https://lennasportfolio.vercel.app/</loc>
+        <loc>https://lenna-s-homepage.onrender.com</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://lennasportfolio.vercel.app/"/>
     </url>
     <url>
-        <loc>https://lennasportfolio.vercel.app/#about</loc>
+        <loc>https://lenna-s-homepage.onrender.com/#about</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://lennasportfolio.vercel.app/#services</loc>
+        <loc>https://lenna-s-homepage.onrender.com/#services</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://lennasportfolio.vercel.app/#curriculum</loc>
+        <loc>https://lenna-s-homepage.onrender.com/#curriculum</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://lennasportfolio.vercel.app/#hobbies</loc>
+        <loc>https://lenna-s-homepage.onrender.com/#hobbies</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://lennasportfolio.vercel.app/#projects</loc>
+        <loc>https://lenna-s-homepage.onrender.com/#projects</loc>
         <lastmod>2025-07-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -54,7 +54,7 @@
     
     <!-- Resources -->
     <url>
-        <loc>https://lennasportfolio.vercel.app/static/assets/Lenna%20Adongo%20Oduor.docx</loc>
+        <loc>https://lenna-s-homepage.onrender.com/static/assets/Lenna%20Adongo%20Oduor.docx</loc>
         <lastmod>2025-07-29</lastmod>
         <priority>0.6</priority>
     </url>

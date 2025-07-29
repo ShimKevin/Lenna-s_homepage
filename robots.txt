@@ -7,7 +7,7 @@ Allow: /static/assets/*.webp$
 Allow: /static/assets/*.docx$
 Crawl-delay: 3
 Host: lennasportfolio.vercel.app
-Sitemap: https://lennasportfolio.vercel.app/sitemap.xml
+Sitemap: https://lenna-s-homepage.onrender.com/sitemap.xml
 
 # Social media bots
 User-agent: Twitterbot
