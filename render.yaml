@@ -1,6 +1,7 @@
+# render.yaml
 static_sites:
   - name: lennas-portfolio
-    build_command: ./build.sh
+    build_command: echo "Static site - no build needed"
     static_path: .
     routes:
       - type: rewrite
@@ -13,6 +14,3 @@ static_sites:
       - path: "/robots.txt"
         name: "Content-Type"
         value: "text/plain"
-      - path: "/*"
-        name: "Cache-Control"
-        value: "public, max-age=3600"
